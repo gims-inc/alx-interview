@@ -1,7 +1,12 @@
+#!/usr/bin/python3
+"""
+Returns a nested list of pascals triangle with values
+"""
+
 def pascal_triangle(n):
     triangle = []
     if n <= 0:
-        return ([])
+        return []
     else:
         for height in range(n):
             row = []
