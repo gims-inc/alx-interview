@@ -5,6 +5,13 @@ Returns a nested list of pascals triangle with values
 
 
 def pascal_triangle(n):
+    """
+    A simple function that return a list ao values in 
+    the pascal triangle for a given height
+
+    n : int
+        the height of the triangle
+    """
     triangle = []
     if n <= 0:
         return triangle
