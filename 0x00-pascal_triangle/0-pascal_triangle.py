@@ -6,7 +6,7 @@ Returns a nested list of pascals triangle with values
 
 def pascal_triangle(n):
     """
-    A simple function that return a list ao values in 
+    A simple function that return a list ao values in
     the pascal triangle for a given height
 
     n : int
