@@ -3,10 +3,11 @@
 Returns a nested list of pascals triangle with values
 """
 
+
 def pascal_triangle(n):
     triangle = []
     if n <= 0:
-        return []
+        return triangle
     else:
         for height in range(n):
             row = []
