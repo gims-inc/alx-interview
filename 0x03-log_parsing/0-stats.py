@@ -20,17 +20,15 @@ try:
         for _ in range(10):
             file_size += int(size)
 
-        #codes[status_code] = 0
-
         print('File size: {}'.format(file_size))
         for key, value in sorted(codes.items()):
-            if value != 0:
+            if value > 0:
                 print('{}: {}'.format(key, value))
 
-except Exception as err:
+except KeyboardInterrupt:
     pass
 
 print('File size: {}'.format(file_size))
 for key, value in sorted(codes.items()):
-    if value != 0:
+    if value > 0:
         print('{}: {}'.format(key, value))
