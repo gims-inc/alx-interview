@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""script that reads stdin line by line and computes metrics"""
 import sys
 
 codes = {'200': 0, '301': 0, '400': 0, '401': 0,
@@ -28,7 +27,8 @@ try:
 except KeyboardInterrupt:
     pass
 
-print('File size: {}'.format(file_size))
-for key, value in sorted(codes.items()):
-    if value > 0:
-        print('{}: {}'.format(key, value))
+finally:
+    print('File size: {}'.format(file_size))
+    for key, value in sorted(codes.items()):
+        if value > 0:
+            print('{}: {}'.format(key, value))
