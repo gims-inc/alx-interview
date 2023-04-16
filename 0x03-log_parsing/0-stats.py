@@ -16,9 +16,9 @@ try:
         if status_code:
             if status_code in codes.keys():
                 codes[status_code] += 1
-     
-        file_size += int(size)
-        
+
+            file_size += int(size)
+
         for _ in range(10):
             print("File size: {}".format(file_size))
             for key, value in sorted(codes.items()):
