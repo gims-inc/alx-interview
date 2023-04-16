@@ -2,7 +2,7 @@
 
 ## Task
 
-Write a script that reads stdin line by line and computes metrics:
+```Write a script that reads stdin line by line and computes metrics:
 
     Input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size> (if the format is not this one, the line must be skipped)
     After every 10 lines and/or a keyboard interruption (CTRL + C), print these statistics from the beginning:
@@ -14,4 +14,7 @@ Write a script that reads stdin line by line and computes metrics:
             format: <status code>: <number>
             status codes should be printed in ascending order
 
-Warning: In this sample, you will have random value - it’s normal to not have the same output as this one.
+ Warning: In this sample, you will have random value - it’s normal to not have the same output as this one.
+
+
+```
