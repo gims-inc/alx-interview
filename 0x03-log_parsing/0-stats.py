@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" script that reads stdin line by line and computes metrics """
 import sys
 
 codes = {'200': 0, '301': 0, '400': 0, '401': 0,
@@ -8,7 +9,7 @@ count = 0
 
 
 def print_info():
-    """print input statistics
+    """print stdin input computed statistics
     """
     print("File size: {}".format(file_size))
     for key, val in sorted(codes.items()):
