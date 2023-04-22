@@ -10,6 +10,7 @@ count = 0
 
 def print_info():
     """print stdin input computed statistics
+    <Helper function>
     """
     print("File size: {}".format(file_size))
     for key, val in sorted(codes.items()):
