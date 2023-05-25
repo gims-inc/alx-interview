@@ -40,6 +40,9 @@ def island_perimeter(grid):
     Returns:
         int: The perimeter of the islands.
     """
+    if type(grid) != list:
+        return 0
+
     width, height = len(grid[0]), len(grid)
     edges, size = 0, 0
 
