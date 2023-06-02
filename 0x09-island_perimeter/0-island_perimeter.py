@@ -8,15 +8,16 @@
     grid is rectangular, with its width and height not exceeding 100
 """
 
+
 def count_adjacent_edges(grid, i, j):
     """
     Counts the number of adjacent edges around a land cell in the grid.
-    
+
     Args:
         grid (list): A list of lists representing the grid.
         i (int): The row index of the land cell.
         j (int): The column index of the land cell.
-        
+
     Returns:
         int: The count of adjacent edges.
     """
@@ -33,10 +34,10 @@ def count_adjacent_edges(grid, i, j):
 def island_perimeter(grid):
     """
     Returns the perimeter of the islands in the given grid.
-    
+ 
     Args:
         grid (list): A list of lists representing the grid.
-        
+
     Returns:
         int: The perimeter of the islands.
     """
