@@ -26,13 +26,15 @@ def isWinner(x, nums):
     for i in range(x):
         n = nums[i]
         prime_count = 0
+
         for i in range(1, n + 1):
             if isPrime(i):
-                prime_count += i
-                if prime_count % 2 == 0:
-                    ben_wins += 1
-                else:
-                    maria_wins += 1
+                prime_count += 1
+
+        if prime_count % 2 == 0:
+            ben_wins += 1
+        else:
+            maria_wins += 1
 
     if maria_wins > ben_wins:
         return "Maria"
